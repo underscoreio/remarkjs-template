@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TITLE - Underscore.io</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <style type="text/css">
+    body { font-family: 'Lato';}
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+    .remark-code, .remark-inline-code { font-family: 'Menlo'; }
+
+    .underscore {
+      background: #0E2C3C;
+      color: white;
+      font-size: 180%;
+    }
+    .underscore a {
+      color: white;
+      text-decoration: none;
+    }
+    .underscore h1 {
+      text-align: center;
+    }
+    .title > h1 {
+      font-size: 300%;
+    }
+    .title > h2  {
+      margin-top: -5%;
+      font-size: 100%;
+    }
+    .title img {
+      margin-bottom: -20%;
+    }
+    ol {
+      margin: 0;
+      padding: 0;
+      line-height: 60px;
+      text-align: center;
+      list-style-type: none;
+    }
+    blockquote {
+      font-size: 200%;
+    }
+    .wide {
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background-image: url(img/hero-left-overlay-white.svg);
+      webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="source">
+    name: inverse
+    layout: true
+    class: underscore
+    ---
+    class: center, middle, hero
+
+    .title[
+      # Title
+      ## Richard Dallaway, [@d6y](http://twitter.com/d6y)
+
+      [![Underscore Logo](img/white-logo.png)](http://underscore.io/)
+    ]
+
+    ???
+
+    Speaker notes go after ???
+
+    Toggle speaker view by pressing P
+
+    Pressing C clones the slideshow view,
+    which is the view to put on the projector
+    if you're using speaker view.
+
+    Press ? to toggle keyboard commands help.
+
+    ---
+
+    # Agenda
+
+    1. Introduction
+    2. Deep-dive
+    3. ...
+
+
+    ---
+    class: center, middle
+
+    # Let's Write Some Code
+
+    ---
+
+    # Code
+
+    ```
+    case class Wibble(x: Throwable \/ Long) {
+      def answer = 42
+    }
+
+    val f: Int => String =
+      x.toString
+    ```
+
+    ---
+    class: center
+
+    # Pictures & Title
+
+    <img src="screengrab.png" width="97%">
+
+    ---
+    background-image: url(screengrab.png)
+
+    ???
+
+    That's the best I can find for a full-page image.
+    The repeat may just be an issue with remark, [#211](https://github.com/gnab/remark/issues/211), specifically.
+
+    ---
+    class: center, middle
+
+    > “I refuse to answer that question on the grounds that I don't know the answer”
+
+    — Douglas Adams
+
+
+    ---
+    class: center, middle, hero
+
+    .title[
+      # Thank You
+      ## Richard Dallaway, [@d6y](http://twitter.com/d6y)
+      ### http://underscore.io/
+
+      [![Underscore Logo](img/white-logo.png)](http://underscore.io/)
+    ]
+
+  </textarea>
+  <!--
+    There's a copy of this JS included in the cached folder,
+    to give yourself a chance if you have no internets /o\
+  -->
+  <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+  </script>
+  <script>
+    var slideshow = remark.create({
+      //ratio: '4:3',
+      ratio: '16:9',
+
+
+      slideNumberFormat: '',
+      // Or you might like the page number bottom right:
+      // slideNumberFormat: '%current%',
+
+      // Default: use ```sql ..``` etc to override
+      highlightLanguage: 'scala',
+
+      // Plausible style for blue background:
+      highlightStyle: 'github',
+
+      // These also look reasonable:
+      //highlightStyle: 'default',
+      //highlightStyle: 'ascetic',
+      //highlightStyle: 'vs',
+
+      //Good styles, but don't really work with a blue background:
+      //highlightStyle: 'ir_black',
+      //highlightStyle: 'dark',
+
+      });
+  </script>
+</body>
+</html>
