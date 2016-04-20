@@ -15,8 +15,9 @@ The default _index.html_ at the remarkjs github page includes custom fonts.
 
 Add one of the following to the `<html>` element:
 
-* `class="blue-theme"`
+* `class="default-theme"`
 * `class="black-theme"`
+* `class="dark-blue-theme"`
 
 ## Links
 
