@@ -1,37 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html class="blue-theme">
 <head>
   <title>TITLE - Underscore.io</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <style type="text/css">
-    body { font-family: 'Lato';}
+    body {
+      font-family: Lato;
+    }
+
     h1, h2, h3 {
       font-weight: normal;
     }
-    .remark-code, .remark-inline-code { font-family: 'Menlo'; }
+
+    .remark-code,
+    .remark-inline-code {
+      font-family: PragmataPro, Menlo;
+    }
 
     .underscore {
-      background: #0E2C3C;
-      color: white;
       font-size: 180%;
     }
+
     .underscore a {
-      color: white;
       text-decoration: none;
     }
+
     .underscore h1 {
       text-align: center;
     }
+
     .title > h1 {
       font-size: 300%;
     }
+
     .title > h2  {
       margin-top: -5%;
       font-size: 100%;
     }
+
     .title img {
       margin-bottom: -20%;
     }
+
     ol {
       margin: 0;
       padding: 0;
@@ -39,13 +49,16 @@
       text-align: center;
       list-style-type: none;
     }
+
     blockquote {
       font-size: 200%;
     }
+
     .wide {
       margin: 0;
       padding: 0;
     }
+
     table {
       font-weight: lighter;
       padding: 0;
@@ -57,21 +70,52 @@
       margin-right: 5%;
       width: 90%;
     }
+
     td,th {
       padding: .5em;
       border: 1pt solid silver;
       font-weight: normal;
     }
+
     th {
       background-color: #3E505D;
       color: white;
     }
-    .hero {
-      background-image: url(img/hero-left-overlay-white.svg);
-      webkit-background-size: cover;
+
+    html.blue-theme body {
+      background: #fff;
+    }
+
+    html.blue-theme .hero {
+      background-color: #2ca9df;
+      background-image: url(img/hero-left-overlay-color.svg);
+      color: #fff;
+      -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+    }
+
+    html.blue-theme .hero a {
+      color: #fff;
+    }
+
+    html.black-theme body {
+      background: #000;
+    }
+
+    html.black-theme .hero {
+      background-color: #2ca9df;
+      background-image: url(img/hero-left-overlay-white.svg);
+      color: #000;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    html.black-theme .hero a {
+      color: #fff;
     }
   </style>
 </head>
