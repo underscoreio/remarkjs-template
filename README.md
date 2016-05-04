@@ -24,3 +24,4 @@ Add one of the following to the `<html>` element:
 * [Intro to Remark](http://remarkjs.com/) ... as a presentation.
 * [Github page](https://github.com/gnab/remark)
 * [Remarkjs Wiki](https://github.com/gnab/remark/wiki) for configuration clues and tricks.
+* [Animate.css](https://github.com/daneden/animate.css) is used for transitions. [Try them out](https://daneden.github.io/animate.css/)!
