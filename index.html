@@ -2,6 +2,7 @@
 <html class="default-theme">
 <head>
   <title>TITLE - Underscore.io</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <style type="text/css">
     body {
@@ -165,12 +166,13 @@
 
     ---
 
+    class: animated slideInUp
+
     # Agenda
 
     1. Introduction
     2. Deep-dive
     3. ...
-
 
     ---
     class: center, middle
@@ -179,6 +181,24 @@
 
     ---
 
+    # Code
+
+    ```
+    case class Wibble(x: Throwable \/ Long) {
+      def answer = 42
+    }
+
+    val f: Int => String =
+      x.toString
+    ```
+
+    ---
+
+    class: animated fadeIn
+
+    <div style="position: absolute; top:0; left: 0; width: 100%; height: 100%; color:red; font-size: 10em; text-align: center">
+     &#x2717;
+    </div>
     # Code
 
     ```
@@ -203,9 +223,9 @@
     ---
     class: center
 
-    # Pictures & Title
+    # Pictures &amp; Title
 
-    <img src="screengrab.png" width="97%">
+    <img src="screengrab.png" width="97%" alt="screen grab">
 
     ---
     background-image: url(screengrab.png)
@@ -239,8 +259,7 @@
     There's a copy of this JS included in the cached folder,
     to give yourself a chance if you have no internets /o\
   -->
-  <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
-  </script>
+  <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js"></script>
   <script>
     var slideshow = remark.create({
       ratio: '4:3',
